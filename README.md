@@ -1,4 +1,5 @@
 # 募資平台_拼拼
+[Demo](https://hoyi-23.github.io/crowdfunding-platforms/)
 這次的募資網站，運用BootStrap5為主要框架來製作，製作過程中遇到的困難點主要有兩個:
 1. Sass 自訂樣式修改 [文章一](https://hoyis-note.coderbridge.io/2021/06/01/BS5-SCSS/)  [文章二](https://hoyis-note.coderbridge.io/2021/05/31/SASS-SCSS/)
 2. 使用BS-tooltip/表單驗證時的JS部分
