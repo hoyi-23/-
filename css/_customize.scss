@@ -1,0 +1,78 @@
+// 其他客製化CSS
+
+body{
+  font-family: 'Noto Sans TC';
+  }
+html img{
+    max-width: 100%;
+    height: auto;
+  }
+
+// LOGO圖片取代文字
+h1 a {
+    background-image: url("../img/logo.jpg");
+    width: 111px;
+    height: 40px;
+    display: block;
+    background-size: contain;
+    @include hide-text;
+  }
+
+// text
+.ff-bt2{
+    font-family: 'Baloo Tamma 2';
+}
+
+.letters-2{
+  letter-spacing: 2px;
+}
+.letters-225{
+    letter-spacing: 2.25px;
+}
+.letters-07{
+  letter-spacing:  0.7px;
+}
+
+.line-h-32{
+  line-height: 32px;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+//btn-hover-Color
+.btn-outline-light{
+  border: solid 2px;
+  color: $light;
+  &:hover{
+    background-color: $primary;
+    color: $light;
+    border-color: $primary;
+    .fas{
+      color: $secondary;
+    }
+  }
+}
+
+.btn-primary{
+  color: $dark;
+  &:hover{
+    background-color: $secondary;
+    color: #fff;
+  }
+}
+
+//social media link bg
+.social-bg{
+  width: 30px;
+  height: 30px;
+  background-color: $light;
+  color: $white;
+}
+
+//phone-btn hide
+#phone-btn.hide{
+  display: none;
+}
+

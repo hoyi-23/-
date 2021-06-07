@@ -1,0 +1,22 @@
+//圖片取代文字 hide-text
+@mixin hide-text{
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+//RWD
+@mixin sm{
+    @media (width:576px) {
+        @content        
+    };
+};
+@mixin md{
+    @media (width:768px) {
+        @content        
+    };
+};
+@mixin lg{
+    @media (width:992px) {
+        @content        
+    };
+};
