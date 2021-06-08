@@ -23,17 +23,18 @@ h1 a {
     font-family: 'Baloo Tamma 2';
 }
 
-.letters-2{
+//letter-spacing
+.letters-xs{
   letter-spacing: 2px;
 }
-.letters-225{
-    letter-spacing: 2.25px;
+.letters-s{
+    letter-spacing: 3px;
 }
-.letters-07{
+.letters-xxs{
   letter-spacing:  0.7px;
 }
-
-.line-h-32{
+//line-height
+.line-h-md{
   line-height: 32px;
 }
 
@@ -76,3 +77,11 @@ h1 a {
   display: none;
 }
 
+//border-radius
+//以5為單位
+.rounded-2{
+  border-radius: 10px;
+}
+.rounded-7{
+  border-radius:35px;
+}
