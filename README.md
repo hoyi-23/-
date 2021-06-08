@@ -49,12 +49,12 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 這邊我使用 **scrollIntoView** 的方式
 點擊後將指定區塊移入視窗中
 ```
-const gotoform = document.querySelector('.gotoform');
+const gotoform = document.querySelectorAll('.gotoform');
 const formPost = document.querySelector("#fillform");
 function GotoForm(e){
   formPost.scrollIntoView({ behavior: 'smooth'});
 }
-gotoform.addEventListener('click',GotoForm,false);
+gotoform.forEach(btn => btn.addEventListener('click',GotoForm,false));
 ```
 
 ### 手機下方釘選的募資按鈕，在底部表單出現後消失

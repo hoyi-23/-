@@ -6,13 +6,12 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 //scroll事件
 //點擊主要專案區塊-贊助專案-滾動到贊助表單
-const gotoform = document.querySelector('.gotoform');
+const gotoform = document.querySelectorAll('.gotoform');
 const formPost = document.querySelector("#fillform");
 function GotoForm(e){
   formPost.scrollIntoView({ behavior: 'smooth'});
 }
-gotoform.addEventListener('click',GotoForm,false);
-
+gotoform.forEach(btn => btn.addEventListener('click',GotoForm,false));
 //hide elements(手機贊助釘選按鈕) when user reaches the bottom of the webpage
 
 document.onscroll = function() {
