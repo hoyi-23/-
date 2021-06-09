@@ -131,24 +131,24 @@
         <!---nav-tabs 頁籤-->
         <div class="container-fluid border-bottom border-top position-sticky top-0 bg-white border-lightbrown border-1" style="z-index: 99;">
             <div class="container p-0 px-md-3">
-                <ul class="nav d-flex flex-nowrap justify-content-between justify-content-md-start" role="tablist">
+                <ul class="nav d-flex flex-nowrap justify-content-between justify-content-md-start" role="tablist" id="navTabs">
                     <li class="nav-item">
-                    <a class="nav-link nav-tabs-hover text-nowrap px-0 px-md-4" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" aria-controls="home" aria-selected="true" href="#" role="tab">專案介紹</a>
+                    <a onclick="goToTab()" class="nav-link nav-tabs-hover text-nowrap px-0 px-md-4" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" aria-controls="home" aria-selected="true" href="#" role="tab">專案介紹</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link nav-tabs-hover text-nowrap px-0 px-md-4" id="faq-tab" data-bs-toggle="tab" data-bs-target="#faq" aria-controls="faq" aria-selected="false" href="#" role="tab">常見問題</a>
+                    <a onclick="goToTab()" class="nav-link nav-tabs-hover text-nowrap px-0 px-md-4" id="faq-tab" data-bs-toggle="tab" data-bs-target="#faq" aria-controls="faq" aria-selected="false" href="#" role="tab">常見問題</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link nav-tabs-hover text-nowrap px-0 px-md-4" id="progress-tab" data-bs-toggle="tab" data-bs-target="#progress" aria-controls="progress" aria-selected="false" href="#" role="tab">目前進度</a>
+                    <a onclick="goToTab()" class="nav-link nav-tabs-hover text-nowrap px-0 px-md-4" id="progress-tab" data-bs-toggle="tab" data-bs-target="#progress" aria-controls="progress" aria-selected="false" href="#" role="tab">目前進度</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link nav-tabs-hover text-nowrap px-0 px-md-4" id="comment-tab" data-bs-toggle="tab" data-bs-target="#comment" aria-controls="comment" aria-selected="false" href="#" role="tab">留言</a>
+                    <a onclick="goToTab()" class="nav-link nav-tabs-hover text-nowrap px-0 px-md-4" id="comment-tab" data-bs-toggle="tab" data-bs-target="#comment" aria-controls="comment" aria-selected="false" href="#" role="tab">留言</a>
                     </li>
                 </ul>
             </div>
         </div>
         <!---pages-->
-        <div class="container my-4">
+        <div class="container my-4" id="pages">
             <div class="row justify-content-center">
                 <div class=" col-md-7">
                     <!---tabpanels-->

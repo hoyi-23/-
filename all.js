@@ -12,18 +12,37 @@ function GotoForm(e){
   formPost.scrollIntoView({ behavior: 'smooth'});
 }
 gotoform.forEach(btn => btn.addEventListener('click',GotoForm,false));
-//hide elements(手機贊助釘選按鈕) when user reaches the bottom of the webpage
 
+//點擊頁面選單將頁面移至畫面內
+function heightToTop(ele) {
+  let bridge = ele;
+  let root = document.body;
+  let height = 0;
+  do {
+    height += bridge.offsetTop;
+    bridge = bridge.offsetParent;
+  } while (bridge !== root);
+
+  return height;
+}
+function goToTab() {
+  window.scrollTo({
+    top: heightToTop(document.getElementsByClassName("tab-content")[0]) - 70,
+    behavior: "smooth",
+  });
+}
+
+//hide elements(手機贊助釘選按鈕) when user reaches the bottom of the webpage
 document.onscroll = function() {
-  var phoneBtn = document.getElementById('phone-btn');
-  var showArea = document.getElementById('main');
-  var showArea_top = showArea.offsetTop;
-  var showArea_height = showArea.clientHeight;
-  var showArea_bottom = showArea_top + showArea_height;
+  const phoneBtn = document.getElementById('phone-btn');
+  const showArea = document.getElementById('main');
+  const showArea_top = showArea.offsetTop;
+  const showArea_height = showArea.clientHeight;
+  const showArea_bottom = showArea_top + showArea_height;
   console.log(showArea_bottom);
-  var scrollTop = document.documentElement.scrollTop;
-  var viewport_height = document.documentElement.clientHeight;
-  var scrollTop_bottom = scrollTop + viewport_height;
+  const scrollTop = document.documentElement.scrollTop;
+  const viewport_height = document.documentElement.clientHeight;
+  const scrollTop_bottom = scrollTop + viewport_height;
   console.log(scrollTop_bottom);
   if(scrollTop_bottom > showArea_bottom){
     phoneBtn.style.display='none';
@@ -31,6 +50,7 @@ document.onscroll = function() {
     phoneBtn.style.display='';
   }
 };
+
 
 //表單驗證
 (function () {
