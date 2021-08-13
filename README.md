@@ -5,7 +5,8 @@
 2. 使用BS-tooltip/表單驗證時的JS部分
 3. Scroll 事件運用
 
-
+這邊是簡單練習BS5操作與運用，所以scss直接修改在node_module內了!(一般不能直接些改node_module，若與他們共同管理網站，他人下載時node_module是自動install新的)
+ 
 -----
 ## tooltip 工具提示框
 基本上的設定在BS5上都寫得非常清楚，但特別需要注意的是
